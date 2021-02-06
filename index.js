@@ -5,4 +5,4 @@ client.on('ready', () => {
     console.log('The client is ready!')
 })
 
-client.login(config.token)
+client.login(process.env.IZUMI_TOKEN)
