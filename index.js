@@ -1,6 +1,5 @@
 const Discord = require('discord.js')
-const client = new Discord.Client()
-const config = require('./config.json')
+const client = new Discord.Client();
 
 client.on('message', async message => {
     if (!message.guild) return;
@@ -14,5 +13,4 @@ client.on('message', async message => {
     }
 })
 
-// client.login(process.env.IZUMI_TOKEN)
-client.login(config.token)
+client.login(process.env.IZUMI_TOKEN)
